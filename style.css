@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* working on the project */
+#main {
+  /* background-color: aquamarine; */
+  height: 100%;
+  width: 100%;
+  color: rgb(85, 81, 81);
+}
+
+/* working on the navbar part1 */
+#nav1 {
+  /* background-color: red; */
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 ; */
+}
+
+/* working on the circle part i.e. logo */
+
+#navpart1 {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin: 0 20px;
+}
+
+.circle {
+  background-color: black;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+
+/* working on the nav sections part */
+#navpart2 {
+  display: flex;
+  gap: 30px;
+  margin: 0 50px;
+  font-size: 17px;
+  font-weight: 300;
+}
+#navpart2 h4 span {
+  margin-left: 20px;
+  color: rgb(182, 169, 169);
+}
+#navpart2 i {
+  display: none;
+}
+/* working on the 2nd navbar */
+#nav2 {
+  width: 100%;
+  height: 70px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 0 50px;
+}
+
+#nav2 h3 {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* working on the middle part of the content */
+
+#content {
+  /* background-color: crimson; */
+  height: calc(100% - 150px);
+  width: 100%;
+}
+
+/* working on the text content */
+#text-content {
+  /* background-color: aqua; */
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+#text-content::-webkit-scrollbar {
+  background-color: transparent;
+  height: 7px;
+  width: 180px;
+}
+#text-content::-webkit-scrollbar-thumb {
+  background-color: rgb(243, 141, 73);
+  border-radius: 10px;
+}
+
+.elem {
+  flex-shrink: 0;
+  height: 100%;
+  width: 50%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* working on the text of the elem */
+
+.elem h1 {
+  font-size: 7vw;
+  font-weight: 100;
+}
+
+/* working on the image part */
+#image-content {
+  /* background-color: crimson; */
+  display: flex;
+  height: 60%;
+  width: 100%;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+#image-content img {
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#image-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Now making it resposive */
+@media (max-width: 600px) {
+  #nav1 {
+    /* background-color: red; */
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 ; */
+  }
+
+  /* working on the circle part i.e. logo */
+
+  #navpart1 {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin: 0 20px;
+  }
+
+  .circle {
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+  }
+
+  /* working on the nav sections part */
+  #navpart2 {
+    display: flex;
+    gap: 15px;
+    margin: 0 10px;
+    font-size: 7vw;
+    font-weight: 300;
+    align-items: center;
+  }
+  #navpart2 h4 span {
+    margin-right: 20px;
+    color: rgb(182, 169, 169);
+  }
+  #navpart2 h4 {
+    display: none;
+  }
+  #navpart2 i {
+    display: initial;
+  }
+
+  #navpart2 h4:nth-child(1) {
+    display: initial;
+    font-size: 3vw;
+  }
+  /* working on the 2nd navbar */
+  #nav2 {
+    width: 100%;
+    height: 30px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0 50px;
+  }
+
+  #nav2 h3 {
+    text-transform: uppercase;
+    padding: 3px;
+    font-size: 2.5vw;
+    font-weight: 400;
+    border: 0.5px solid rgb(163, 156, 156);
+    border-radius: 3px;
+  }
+
+  /* working on the middle part of the content */
+
+  #content {
+    /* background-color: crimson; */
+    height: calc(100% - 70px);
+    width: 100%;
+  }
+
+  /* working on the text content */
+  #text-content {
+    /* background-color: aqua; */
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  #text-content::-webkit-scrollbar {
+    background-color: transparent;
+    height: 7px;
+    width: 180px;
+  }
+  #text-content::-webkit-scrollbar-thumb {
+    background-color: rgb(243, 141, 73);
+    border-radius: 10px;
+  }
+
+  .elem {
+    flex-shrink: 0;
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* working on the text of the elem */
+
+  .elem h1 {
+    font-size: 9vw;
+    font-weight: 100;
+  }
+
+  /* working on the image part */
+  #image-content {
+    /* background-color: crimson; */
+    display: flex;
+    height: 65%;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  #image-content img {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #image-content::-webkit-scrollbar {
+    display: none;
+  }
+}
